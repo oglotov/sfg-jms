@@ -11,6 +11,7 @@ class JmsConfig {
 
     companion object {
         const val MY_QUEUE = "my-hello-world"
+        const val MY_SEND_RCV_QUEUE = "reply-back-to-me"
     }
 
     @Bean
