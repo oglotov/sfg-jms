@@ -8,6 +8,11 @@ import org.springframework.jms.support.converter.MessageType
 
 @Configuration
 class JmsConfig {
+
+    companion object {
+        const val MY_QUEUE = "my-hello-world"
+    }
+
     @Bean
     fun messageConverter(): MessageConverter {
         val converter = MappingJackson2MessageConverter().apply {
